@@ -1,0 +1,145 @@
+  <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">CodeForhost</div>
+                <div class="menu">
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Tutorials</a>
+                            <ul>
+                                <li><a href="#">Html5</a></li>
+                                <li><a href="#">Css3</a></li>
+                                <li><a href="#">Script</a>
+                                    <ul>
+                                        <li><a href="#">JavaScript</a></li>
+                                        <li><a href="#">Jquery</a></li>
+                                        <li><a href="#">Ajax</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Programming</a></li>
+                                <li><a href="#">Apps Code</a>
+                            </ul>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    .container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.div-clear{
+    content: '';
+    clear: both;
+}
+
+/* header section style start here */
+
+
+
+
+header{
+    background: #2a2b2b;
+    width: 100%;
+    min-height:55px;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 9999;
+   
+
+
+}
+.logo{
+    font-size: 30px;
+    padding: 5px 0px;
+    float: left;
+    color: crimson;
+
+}
+.menu{
+    float: right;
+}
+.menu ul{
+    
+    list-style-type: none;
+}
+.menu ul li{
+    float: left;
+    text-align: center;
+    border-right: 1px solid #2B2A2A;
+    border-left: 1px solid #2B2A2A;
+    position: relative;
+}
+.menu ul li:first-child{
+    border-left: none;
+}
+
+.menu ul li:last-child{
+    border-right: none;
+}
+
+.menu ul li a{
+    color:white;
+    text-decoration: none;
+    background: hsl(0, 4%, 37%);
+    padding:10px 24px;
+    margin-top: 8px;
+    text-align: center; 
+    display: block;
+    transition: 0.3s;
+}
+.menu ul li a.active{
+    background: crimson;
+}
+.menu ul li a:hover{
+    background: crimson;
+}
+.menu ul li:hover ul{
+    left: 0;
+
+}
+.menu ul li ul{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    left: -999999px;
+    width: 120px;
+}
+.menu ul li ul li{
+    position: relative;
+    float: none;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #5a1616;
+    border-top: 1px solid #501313;
+    
+   
+  
+}
+.menu ul li ul li a{
+    margin-top: 0px;
+    text-align: left;
+   
+}
+.menu ul li ul li ul{
+    position: absolute;
+    top: -999999px;
+}
+.menu ul li ul li:hover ul{
+    top:0;
+    left:120px;
+}
